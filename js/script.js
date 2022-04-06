@@ -25,7 +25,7 @@ console.log("Età",age);
 const prezzoKm = 0.21 ;
 console.log("Prezzo al km", prezzoKm);
 
-let prezzoTotale =  km * prezzoKm;
+let prezzoTotale = km * prezzoKm ;
 
 /* .3 */
 if(age < 18 ){
@@ -36,6 +36,22 @@ else if(age > 65){
 }
 
 console.log("Prezzo totale",prezzoTotale);
+
+/*.4 */
+const datiAquisto =
+`
+    <ul>
+    <li>Chilometri : ${km}</li>
+    <li> Età : ${age}</li>
+    <li>Prezzo al km : ${prezzoKm} </li>
+    </ul>
+
+`
+console.log(datiAquisto);
+
+document.getElementById("list").innerHTML = datiAquisto;
+
+document.getElementById("Prezzofinale").innerHTML ="Prezzo Finale :" + prezzoTotale;
 
 
 
