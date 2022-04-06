@@ -1,7 +1,7 @@
 /* 
     .1 info sui chilometri percossi ed eta passeggero.
     .2 caclolo prezzo totale del viaggio in base ai km (0.21 euro al km)
-    .3 applicare sconto del 20% se minorenne 40% over 65
+    .3 applicare sconto del 20% se minorenne, 40% over 65
     .4 stampare prezzo finale con due decimali per indicare i centesimi
 
 */
@@ -18,17 +18,27 @@ if(isNaN(age)){
 }
 
 
-console.log(km);
-console.log(age);
+console.log("Km",km);
+console.log("Età",age);
 
 /*.2 */
 const prezzoKm = 0.21 ;
-console.log(prezzoKm);
+console.log("Prezzo al km", prezzoKm);
 
-const prezzoTotale =  km * prezzoKm;
-console.log(prezzoTotale);
+let prezzoTotale =  km * prezzoKm;
 
 /* .3 */
+if(age < 18 ){
+    prezzoTotale = prezzoTotale * 0.8;
+} 
+else if(age > 65){
+    prezzoTotale = prezzoTotale * 0.4;
+}
+
+console.log("Prezzo totale",prezzoTotale);
+
+
+
 
 
 
