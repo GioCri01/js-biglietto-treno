@@ -51,7 +51,7 @@ console.log(datiAquisto);
 
 document.getElementById("list").innerHTML = datiAquisto;
 
-document.getElementById("Prezzofinale").innerHTML ="Prezzo Finale :" + prezzoTotale;
+document.getElementById("Prezzofinale").innerHTML ="Prezzo Finale :" + prezzoTotale.toFixed(2);
 
 
 
