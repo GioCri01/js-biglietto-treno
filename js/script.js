@@ -22,6 +22,14 @@ console.log(km);
 console.log(age);
 
 /*.2 */
+const prezzoKm = 0.21 ;
+console.log(prezzoKm);
+
+const prezzoTotale =  km * prezzoKm;
+console.log(prezzoTotale);
+
+/* .3 */
+
 
 
 
